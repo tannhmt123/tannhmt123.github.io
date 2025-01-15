@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=3, user-scalable=no">
+    <title>Người dẫn lối ước mơ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/bf032dd0ed9b7bf20340196135d984fb?family=Swank+Gothic+W90+Bold" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/coco-gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("D:/code/main.PNG");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }/*Di chuyển từ trái vào*/
+        @keyframes fadeIn1 {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px); 
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }/*Di chuyển từ phải vào*/
+        @keyframes fadeIn2 {
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }/*Di chuyển từ trên xuống*/
+        @keyframes fadeIn3 {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Trang 1*/
+        .section-1 {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FDF6EA;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn1 0.5s ease-out forwards;
+        }
+
+        .section-1 h1 {
+            margin-top: 100px;
+            font-family: 'Swank Gothic W90 Bold', sans-serif;
+            font-size: 80px;
+            text-align: center;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn1 3s ease-out forwards;
+        }
+        /* Trang 2*/
+        .section-2 {
+            padding: 50px 20px;
+            position: relative;
+        top: 150px;
+        }
+
+        .section-2 .container {
+            width: 85%;
+            margin: 10px auto;
+            padding: 20px;
+            border-radius: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .section-2 .header {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .section-2 .header img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .section-2 .header h1 {
+            font-family: "Noto Serif Display", serif;
+            font-size: 50px;
+            color: #333;
+            margin: 1;
+            font-weight: bold;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn1 3s ease-out forwards;
+        }
+
+        .section-2 .content {
+            font-weight: bolder;
+            flex: 2;
+            text-align: center;
+            font-size: 23px;
+            line-height: 1.8;
+            color: #333;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn2 2s ease-out forwards;
+        }
+
+        .highlight {
+            color: #ff9900;
+            font-weight: bold;
+        }
+        /* Trang 3*/
+        .container-34 {
+            width: 120%;
+            height: 2000%;
+            position: relative;
+            top: 310px;
+            left: -29%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2px;
+            gap: 1px;
+        }
+
+        .left-panel-34 {
+            flex: 2;
+            min-width: 100px;
+        }
+
+        .center-panel-34 {
+            flex: 1;
+            padding: 2px;
+            text-align: left;
+        }
+
+        .center-panel-34 h2 {
+            width: 120%;
+            position: relative;
+            top: 50%;
+            right: -8%;
+            font-family: 'Playfair Display', serif;
+            font-size: 25px;
+            color: #333;
+            margin-top: 100px;
+            margin-right: 50px;
+            margin-left: 70px;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+            transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+            animation: fadeIn1 2s ease-out forwards;
+        }
+
+        .center-panel-34 .image {
+            float: right;
+            
+        }
+
+        .image img {
+            position: relative;
+            left: 200%;
+            top: 50%;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .poem-container-left-34 {
+            position: relative;
+            right: -10%;
+            width: 150%;
+            margin-right: 150px;
+            padding-left: 70px;
+            line-height: 1.1;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+            transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+            animation: fadeIn1 2s ease-out forwards;
+        }
+
+        .poem-container-left-34 p {
+            position: relative;
+            right: 1%;
+            margin-left: 1px;
+            margin: 1px;
+            font-size: 15px;
+            color: #555;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn1 2s ease-out forwards;
+        }
+
+        .poem-container-left-34 p.author-34 {
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .right-panel-34 {
+            flex: 1.5;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .poem-container-right-34 {
+            position: relative;
+            margin-right: 80px;
+            margin-top: 230px;
+            padding: 1px;
+            border-radius: 10px;
+            text-align: center;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+            transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+            animation: fadeIn2 2s ease-out forwards;
+        }
+
+        .poem-container-right-34 p {
+            position: relative;
+            left: 43%;
+            top: 120%;
+            height: 500%;            
+            margin-left: 20px;
+            font-size: 15px;
+            color: #555;
+            margin: 1px 0;
+        }
+
+        .poem-container-right-34 p.author {
+            text-align: center;
+            font-style: italic;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        /* Trang 4*/
+        .essay-section {
+            position: relative;
+            top: 390px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 2px;
+            gap: 1px;
+        }
+        
+        .h1{    
+            font-size: 30px;
+            text-align: center; 
+            color: #FDF6EA; 
+            font-family: Paytone One;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn3 2s ease-out forwards;
+            text-shadow: 
+                -1px -1px 0 #000, 
+                1px -1px 0 #000, 
+                -1px 1px 0 #000, 
+                1px 1px 0 #000;
+        }
+
+        .container-essay-34 {
+            display: flex; 
+            align-items: flex-start; 
+                }
+
+        .left-34 {
+            font-size: 20px;
+            margin-left: 20px;
+            text-align: center; 
+            width: 47%;
+            padding: 10px;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn1 2s ease-out forwards;
+        }
+
+        .right-34 {
+            font-size: 20px;
+            margin-left: 20px;
+            width: 47%;
+            height: 30%;
+            text-align: center; 
+            padding: 30px;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn2 2s ease-out forwards;
+        }
+        /*Trang 5*/
+        .poem-section-567 {
+            position: relative;
+            top: 500px;
+            padding: 30px;
+            min-height: 100vh;
+        }
+
+        .poem-567 {
+            margin-right: 20px;
+            max-width: 600px;
+            margin: 2px;
+            padding: 2px;
+            top: 5px;
+            float: right;
+            opacity: 0; /* Bắt đầu từ trạng thái ẩn */
+        transform: translateY(20px); /* Dịch chuyển nhẹ xuống dưới */
+        animation: fadeIn2 2s ease-out forwards;
+        }
+
+        .poem-567 h1 {
+            text-align: left;
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .poem-567 .section-567 {
+            margin-right: 50px;
+            margin-right: 50px;
+            font-size: 15px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+
+        .poem-567 p {
+            margin-left: 500px;
+            margin-right: 50px;
+            margin-top: 20px;
+            text-align: left;
+            margin: 5px;
+        }
+
+        .author-567 {
+            text-align: center;
+            font-size: 15px;
+            font-style: italic;
+            color: #555;
+        }
+        /* trang 6*/
+        .video-section {
+            position: relative;
+            top: 530px;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        .video-section h1 {
+            text-align: center; 
+            font-size: 55px;
+            color: #FAE4BB; 
+            font-family: Paytone One;
+            margin-top: 20px; 
+            text-shadow: 
+                -1px -1px 0 #000, /* Viền trên trái */
+                1px -1px 0 #000,  /* Viền trên phải */
+                -1px 1px 0 #000,  /* Viền dưới trái */
+                1px 1px 0 #000;   /* Viền dưới phải */
+        }
+        
+        iframe {
+            margin-bottom: 290px;
+            width: 850px;
+            height: 480px;
+            border: none;
+        }
+        /* trang 7*/
+        .form-section-567 {
+            position: relative;
+            top: 410px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container-567 {
+            display: flex;
+            width: 80%;
+            height: auto;
+            margin: -250px auto 0;
+        }
+
+        .left-panel-567,
+        .right-panel-567 {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-panel-567 {
+            margin-right: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-panel-567 {
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        select, textarea, button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            margin-top: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        label {
+            font-size: 18px;
+            color: #333;
+        }
+
+        #nhiemvu, #ngay, #facebookLink {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #555;
+        }
+    /* chân web*/
+    .footer {
+            position: relative;
+            top: 450px;
+            right: 3%;
+            width: 1293px;
+            background-color: #333;
+            color: #FAE4BB;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Roboto, sans-serif;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Trang 1-->
+    <section class="section-1">
+        <h1>Nét Bút Tri Ân</h1>
+    </section>
+    <!-- trang 2-->
+    <section class="section-2">
+        <div class="container">
+            <div class="header">
+                <h1>LỜI NGỎ</h1>
+            </div>
+            <div class="content">
+                <p>
+                    Mái tóc thầy giờ đây đã điểm những sợi bạc, như những dấu ấn thời gian, như những hạt bụi phấn đã in sâu vào từng sợi tóc, chứng kiến bao mùa phượng nở, bao mùa lá bay. Trong từng hạt bụi phấn ấy, ẩn chứa bao tâm huyết, bao nỗi niềm lo lắng của người thầy dành cho những đứa con <span class="highlight">tinh thần của mình</span>.
+                </p>
+                <p>
+                    Người thầy chẳng quan tâm tới mái tóc mình đang ngày một bạc thêm, còn những người học trò cũng chẳng ai có thể đếm được có bao nhiêu hạt bụi đậu vào mái tóc thầy trong mỗi tiết học. Đọng lại trong đó là một nơi niềm ưu tư về cuộc sống, về tương lai của những thế hệ học trò.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--trang 3-->
+    <div class="container-34">
+        <!-- Left Panel -->
+        <div class="left-panel-34"></div>
+
+        <!-- Center Panel -->
+        <div class="center-panel-34">
+            <h2>Người dẫn lối ước mơ</h2>
+            <div class="image">
+                <img style="width: 120px; height: 300px" src="D:/code/anhlop.jpg" alt="Image 1">
+            </div>
+            <div class="poem-container-left-34">
+                <p>Ngày hai mươi tháng mười một,</p>
+                <p>Chúng em nhớ ơn thầy.</p>
+                <p>Người dạy em chữ nghĩa,</p>
+                <p>Sáng tỏ những ước mơ.</p>
+                <br>
+                <p>Bước chân qua năm tháng,</p>
+                <p>Lời thầy vẫn khắc ghi.</p>
+                <p>Công lao bao khó nhọc,</p>
+                <p>Sáng mãi trong tim này.</p>
+                <br>
+                <p>Xin chúc thầy hạnh phúc,</p>
+                <p>Mái trường luôn vững bầu.</p>
+                <p>Tri ân thầy cô mãi,</p>
+                <p>Dẫn lối cho mai sau.</p>
+                <p class="author-34">Bảo Vy_Sơn Hà</p>
+            </div>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="right-panel-34">
+            <div class="poem-container-right-34">
+                <p>Thầy cô như ánh trăng soi,</p>
+                <p>Dẫn đường tri thức, muôn đời sáng trong.</p>
+                <p>Lặng thầm năm tháng vun trồng,</p>  
+                <p>Công lao trời bể, lòng không đổi dời.</p><br>
+                <p>Chúng em như búp măng non,</p>
+                <p>Dưới tay cô dẫn, lớn khôn từng ngày.</p> 
+                <p>Hôm nay ngây dại thơ ngây</p>
+                <p>Mai sau vững bước, dựng xây cuộc đời.</p> 
+                <p class="author-34">_Thành Công_</p>
+            </div>
+        </div>
+    </div>
+    <!--trang 4-->
+    <div class="essay-section">
+        <div class="h1">
+            <h1>Bài cảm nghĩ</h1>
+        </div>
+        <div class="container-essay-34">
+            <p class="left-34">
+            THẦY CÔ ĐỐI VỚI EM KHÔNG CHỈ LÀ NHỮNG NGƯỜI TRUYỀN ĐẠT KIẾN THỨC MÀ CÒN LÀ NHỮNG NGƯỜI DẪN DẮT, DÌU DẮT EM TỪNG BƯỚC TRƯỞNG THÀNH. TỪ NHỮNG NGÀY ĐẦU ĐẾN LỚP, EM VẪN CÒN NHỚ CẢM GIÁC HỒI HỘP VÀ LẠ LẪM, NHƯNG CHÍNH THẦY CÔ ĐÃ LÀM CHO EM CẢM THẤY AN TÂM VÀ QUEN THUỘC. NHỮNG LỜI GIẢNG TẬN TÂM, NHỮNG LỜI KHUYÊN BẢO, ĐỘNG VIÊN ĐÃ GIÚP EM VƯỢT QUA NHỮNG KHÓ KHĂN VÀ TỰ TIN HƠN TRONG HÀNH TRÌNH HỌC TẬP CỦA MÌNH.<br>
+            <br>THẦY CÔ LÀ NGƯỜI KHÔNG CHỈ DẠY EM VỀ TOÁN, VĂN, LỊCH SỬ, MÀ CÒN TRUYỀN CHO EM NHỮNG BÀI HỌC CUỘC SỐNG QUÝ GIÁ. THẦY CÔ ĐÃ DẠY EM BIẾT CHIA SẺ, YÊU THƯƠNG VÀ TÔN TRỌNG MỌI NGƯỜI. ĐÔI KHI, CÓ NHỮNG LÚC EM MẮC LỖI, THẦY CÔ KHÔNG TRÁCH MẮNG MÀ NHẸ NHÀNG NHẮC NHỞ, GIÚP EM HIỂU VÀ SỬA ĐỔI. SỰ KIÊN NHẪN, TẬN TỤY CỦA THẦY CÔ KHIẾN EM CẢM NHẬN ĐƯỢC TÌNH CẢM LỚN LAO MÀ THẦY CÔ DÀNH CHO HỌC TRÒ..<br>
+            </p>
+
+            <p class="right-34">
+            EM ĐẶT BIỆT ẤN TƯỢNG VỚI NHỮNG HÌNH ẢNH THẦY CÔ LUÔN HẾT LÒNG VÌ HỌC SINH. DÙ CÔNG VIỆC GIẢNG DẠY VẤT VẢ, THẦY CÔ VẪN DÀNH THỜI GIAN QUAN TÂM ĐẾN TỪNG BẠN, GIÚP ĐỠ NHỮNG BẠN HỌC YẾU, TRUYỀN ĐỘNG LỰC ĐỂ EM CỐ GẮNG HƠN TỪNG NGÀY. NHỮNG LÚC EM NẢN LÒNG HAY GẶP KHÓ KHĂN, THẦY CÔ LUÔN BÊN CẠNH ĐỘNG VIÊN, NHẮC NHỞ EM ĐỪNG TỪ BỎ. CHÍNH TÌNH CẢM VÀ SỰ QUAN TÂM ĐÓ LÀ ĐỘNG LỰC GIÚP EM VƯỢT QUA MỌI THỬ THÁCH.</br>
+                <br>TRONG SUY NGHĨ CỦA EM, THẦY CÔ LÀ NHỮNG NGƯỜI HÙNG THẦM LẶNG, LÀ NHỮNG NGƯỜI DẪN ĐƯỜNG, ĐƯA TỪNG THẾ HỆ HỌC SINH ĐẾN GẦN HƠN VỚI TƯƠNG LAI TƯƠI SÁNG. EM LUÔN BIẾT ƠN VÀ KÍNH TRỌNG THẦY CÔ – NHỮNG NGƯỜI ĐÃ DẠY DỖ, TRAO CHO EM HÀNH TRANG QUÝ BÁU TRÊN CON ĐƯỜNG HỌC TẬP VÀ CUỘC SỐNG. DÙ SAU NÀY CÓ ĐI XA, EM TIN RẰNG HÌNH ẢNH THẦY CÔ SẼ LUÔN SỐNG MÃI TRONG TRÁI TIM EM.</br>
+            </p>
+        </div>
+    </div>
+    <!--trang 5-->
+    <div class="poem-section-567">
+        <div class="poem-567">
+            <h1>TÂM SỰ HỌC TRÒ</h1>
+            <div class="section-567">
+                <p>Khai trường tiếng trống dền vang</p>
+                <p>Em đây lại có một trang vở đầy</p>
+                <p>Tất cả đều ơn cô thầy</p>
+                <p>Dạy em từ thuở mặt mày còn non.</p>
+            </div>
+            <div class="section-567">
+                <p>Nhờ vậy em mới bon bon</p>
+                <p>Vững chân dạo bước trên con đường đời</p>            
+                <p>Vững chân dạo bước trên con đường đời</p>
+                <p>Mai sau ở khắp phương trời</p>
+            </div>
+            <div class="section-567">
+                <p>Cô thầy vẫn mãi lung linh</p>
+                <p>Trong tâm trong trí dáng hình không phai</p>
+                <p>Cảm ơn giọt nắng ban mai</p>
+                <p>Sáng soi cành phượng mái trường thanh xuân.</p>
+            </div>
+            <div class="author-567">
+                <p>—hth-</p>
+            </div>
+        </div>
+    </div>
+    <!--trang 6-->
+    <div class="video-section">
+        <h1>VIDEO</h1>
+        <iframe src="D:/code/12a1.mp4" allow="autoplay; encrypted-media"></iframe>
+    </div>
+    <!--trang 7-->
+    <div class="form-section-567">
+        <div class="container-567">
+            <!-- Left Panel -->
+            <div class="left-panel-567">
+                <form>
+                    <label for="name">Họ và Tên:</label><br>
+                    <select name="name" id="name" onchange="hienthinhiemvu(); diachiface(); date();">
+                        <option></option>
+                        <option value="Tan">Nguyễn Hoàng Minh Tân</option>
+                        <option value="Dien">Phan Bửu Điền</option>
+                        <option value="Nhan">Nguyễn Phạm Kim Nhàn</option>
+                        <option value="Phat">Đặng Trường Phát</option>
+                        <option value="Khoa">Lê Minh Khoa</option>
+                        <option value="Phi">Mai Hồng Phi</option>
+                        <option value="Sam">Nguyễn Hoàng Sâm</option>
+                        <option value="Thien">Nguyễn Phúc Thiện</option>
+                        <option value="Thinh">Nguyễn Võ Hưng Thịnh</option>
+                        <option value="Tran">Trần Ngọc Bảo Trân</option>
+                        <option value="Truc">Huỳnh Thị Thủy Trúc</option>
+                    </select><br>
+                    <div id="nhiemvu"></div>
+                    <div id="ngay"></div>
+                    <p id="facebookLink" style="display: none;"></p>
+                </form>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel-567">
+                <textarea id="comment" name="comment" rows="8" cols="28"></textarea><br>
+                <button type="submit">Gửi</button>
+            </div>
+        </div>
+    </div>
+ <script>
+        function hienthinhiemvu() {
+            var ten = document.getElementById('name').value;
+            var task = document.getElementById('nhiemvu');
+            var job = "";
+            switch (ten) {
+                case "Khoa":
+                    job = "Nhiệm vụ: Làm word";
+                    break;
+                case "Tan":
+                    job = "Nhiệm vụ: Viết code";
+                    break;
+                case "Dien":
+                    job = "Nhiệm vụ: Làm powerpoint";
+                    break;
+                case "Nhan":
+                    job = "Nhiệm vụ: Thiết kế báo tường";
+                    break;
+                case "Phat":
+                    job = "Nhiệm vụ: Nội dung báo tường";
+                    break;
+                case "Phi":
+                case "Sam":
+                    job = "Nhiệm vụ: Tìm kiếm hình ảnh";
+                    break;
+                case "Thien":
+                    job = "Nhiệm vụ: Viết code";
+                    break;
+                case "Tran":
+                    job = "Nhiệm vụ: Thuyết trình";
+                    break;
+                case "Truc":
+                    job = "Nhiệm vụ: Thiết kế báo tường";
+                    break;
+                case "Thinh":
+                    job = "Nhiệm vụ: Hỗ trợ thiết kế và code - Nhóm trưởng";
+                    break;
+                default:
+                    job = "";
+            }
+            task.innerHTML = job;
+        }
+
+        function diachiface() {
+            var face = document.getElementById('name').value;
+            var facebook = document.getElementById('facebookLink');
+            switch (face) {
+                    case "Dien":
+            facebook.style.display = "block";
+            facebook.innerHTML = 
+                '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">' +
+                '<a href="https://www.facebook.com/wen.y.willy.2024" style="color: darkcyan;" target="_blank">Facebook</a>';
+            break;
+                case "Thinh":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">  <a href="https://www.facebook.com/thinh.nguyen.417482" style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Truc":
+                    facebook.style.display = "block";
+                    facebook.innerHTML =' <img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href="https://www.facebook.com/huynh.truc.160046" style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Phi":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = ' <img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href="https://www.facebook.com/phi.mai.536725" style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Thien":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = ' <img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href="https://www.facebook.com/thien.nguyen.570767 " style="color: darkcyan;" target="_blank">Facebook</a><img src="D:/code/king.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">';
+                    break;
+                case "Sam":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = ' <img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href= "https://www.facebook.com/nguyen.hoang.sam.927950 " style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Phat":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href="https://www.facebook.com/dang.phat.3572 " style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Khoa":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = ' <img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"> <a href="https://www.facebook.com/minhkhoa.le.752861 " style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Tran":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"><a href="https://www.facebook.com/beochan.tran  " style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Nhan":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;"><a href="https://www.facebook.com/profile.php?id=100074287172201 " style="color: darkcyan;" target="_blank">Facebook</a>';
+                    break;
+                case "Tan":
+                    facebook.style.display = "block";
+                    facebook.innerHTML = '<img src="D:/code/facebook icon.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">' +
+                    '<a href="https://www.facebook.com/nguyen.tan.475981" style="color: darkcyan;" target="_blank">Facebook</a>'+
+                    '<img src="D:/code/king.png" alt="Facebook icon" style="width: 40px; height: 40px; vertical-align: middle; margin-right: 8px;">';
+                    break;
+                default:
+                    facebook.style.display = "none";
+            }
+        }
+
+        function date() {
+            var birth = document.getElementById('name').value;
+            var age = document.getElementById('ngay');
+            var out = "";
+            switch (birth) {
+                case "Tan":
+                    out = "22/05/2007";
+                    break;
+                case "Nhan":
+                    out = "24/10/2007";
+                    break;
+                case "Truc":
+                    out = "25/04/2007";
+                    break;
+                case "Phi":
+                    out = "26/08/2007";
+                    break;
+                case "Sam":
+                    out = "04/08/2007";
+                    break;
+                case "Thien":
+                    out = "13/10/2007";
+                    break;
+                case "Phat":
+                    out = "14/09/2007";
+                    break;
+                case "Khoa":
+                    out = "07/07/2007";
+                    break;
+                case "Dien":
+                    out = "02/10/2007";
+                    break;
+                case "Thinh":
+                    out = "28/01/2007";
+                    break;
+                case "Tran":
+                    out = "28/1/2007";
+                    break;
+                default:
+                    out = "";
+            }
+            age.innerHTML = out;
+        }
+    </script>
+    <!--chân web-->
+    <footer class="footer">
+        <h4>Liên Hệ</h4>
+        <p>Email tổ trưởng: 8a2.26.nguyenvohungthinh@gmail.com</p>
+        <p>📞Điện thoại: 0934618487</p>
+        <p>📍Địa chỉ: THPT LÝ THƯỜNG KIỆT</p>
+    </div>
+</div>
+</body>
+</html>
